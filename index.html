@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Curricular</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Curricular Interactiva</h1>
+
+  <div class="semestre" onclick="toggleMaterias(1)">
+    <h2>Semestre 1</h2>
+    <ul id="materias-1" class="materias oculto">
+      <li>Modelación matemática fundamental</li>
+      <li>Pensamiento computacional</li>
+      <li>Aplicación de leyes de conservación</li>
+    </ul>
+  </div>
+
+  <div class="semestre" onclick="toggleMaterias(2)">
+    <h2>Semestre 2</h2>
+    <ul id="materias-2" class="materias oculto">
+      <li>Termodinámica</li>
+      <li>Análisis estadístico</li>
+      <li>Electromagnetismo</li>
+    </ul>
+  </div>
+
+  <!-- Puedes seguir duplicando div.semestre para los demás -->
+
+  <script src="script.js"></script>
+</body>
+</html>
