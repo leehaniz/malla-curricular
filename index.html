@@ -1,34 +1,85 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malla Curricular</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Malla Curricular Interactiva</h1>
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: sans-serif;
+  }
+  .semestre-box {
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  .s1 { background-color: #3b82f6; }
+  .s2 { background-color: #10b981; }
+  .s3 { background-color: #f59e0b; }
+  .s4 { background-color: #8b5cf6; }
+  .s5 { background-color: #ef4444; }
+  .s6 { background-color: #14b8a6; }
+  .s7 { background-color: #ec4899; }
+  .s8 { background-color: #0ea5e9; }
+</style>
 
-  <div class="semestre" onclick="toggleMaterias(1)">
-    <h2>Semestre 1</h2>
-    <ul id="materias-1" class="materias oculto">
-      <li>Modelación matemática fundamental</li>
-      <li>Pensamiento computacional</li>
-      <li>Aplicación de leyes de conservación</li>
-    </ul>
-  </div>
+<h2 style="text-align:center;">📚 Malla Curricular - Ingeniería</h2>
+<div class="grid">
+  <!-- Semestre 1 -->
+  <div class="semestre-box s1">Optativa de matemáticas y ciencias</div>
+  <div class="semestre-box s1">Pensamiento computacional para ingeniería</div>
+  <div class="semestre-box s1">Modelación matemática fundamental</div>
+  <div class="semestre-box s1">Modelación de la ingeniería y ciencias</div>
+  <div class="semestre-box s1">Modelación del movimiento en ingeniería</div>
+  <div class="semestre-box s1">Análisis de la estructura, propiedades y transformación de la materia</div>
+  <div class="semestre-box s1">Aplicación de las leyes de conservación</div>
 
-  <div class="semestre" onclick="toggleMaterias(2)">
-    <h2>Semestre 2</h2>
-    <ul id="materias-2" class="materias oculto">
-      <li>Termodinámica</li>
-      <li>Análisis estadístico</li>
-      <li>Electromagnetismo</li>
-    </ul>
-  </div>
+  <!-- Semestre 2 -->
+  <div class="semestre-box s2">Optativa de humanidades y bellas artes</div>
+  <div class="semestre-box s2">Modelación matemática intermedia</div>
+  <div class="semestre-box s2">Experimentación física y pensamiento estadístico</div>
+  <div class="semestre-box s2">Aplicación de la termodinámica</div>
+  <div class="semestre-box s2">Experimentación química y pensamiento estadístico fundamental</div>
+  <div class="semestre-box s2">Análisis de sistemas eléctricos</div>
+  <div class="semestre-box s2">Modelación matricial</div>
+  <div class="semestre-box s2">Análisis estadístico</div>
+  <div class="semestre-box s2">Electromagnetismo</div>
 
-  <!-- Puedes seguir duplicando div.semestre para los demás -->
+  <!-- Semestre 3 -->
+  <div class="semestre-box s3">Optativa de ciencias sociales</div>
+  <div class="semestre-box s3">Análisis de equilibrio estático</div>
+  <div class="semestre-box s3">Álgebra lineal</div>
+  <div class="semestre-box s3">Tópico de exploración</div>
+  <div class="semestre-box s3">Sistemas dinámicos</div>
+  <div class="semestre-box s3">Experimentos en innovación ingenieril</div>
+  <div class="semestre-box s3">Análisis de circuitos eléctricos</div>
+  <div class="semestre-box s3">Análisis de datos</div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+  <!-- Semestre 4 -->
+  <div class="semestre-box s4">Optativa de liderazgo</div>
+  <div class="semestre-box s4">Elementos de la mecatrónica</div>
+  <div class="semestre-box s4">Integración mecatrónica</div>
+  <div class="semestre-box s4">Análisis de mecanismos</div>
+  <div class="semestre-box s4">Análisis de materiales y manufactura</div>
+  <div class="semestre-box s4">Modelación y automatización</div>
+  <div class="semestre-box s4">Implementación de sistemas mecatrónicos</div>
+
+  <!-- Semestre 5 -->
+  <div class="semestre-box s5">Optativa de ética</div>
+  <div class="semestre-box s5">Diseño mecatrónico</div>
+  <div class="semestre-box s5">Solución de problemas de procesos</div>
+  <div class="semestre-box s5">Diseño de sistemas de control</div>
+  <div class="semestre-box s5">Automatización industrial</div>
+
+  <!-- Semestre 6 -->
+  <div class="semestre-box s6">Diseño y desarrollo de robots</div>
+  <div class="semestre-box s6">Automatización de manufactura</div>
+
+  <!-- Semestre 7 -->
+  <div class="semestre-box s7">Optativa profesional I-VI</div>
+
+  <!-- Semestre 8 -->
+  <div class="semestre-box s8">Optativa profesional multidisciplinaria</div>
+  <div class="semestre-box s8">Diseño e implementación de sistemas mecatrónicos</div>
+</div>
