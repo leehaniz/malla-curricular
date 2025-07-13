@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.semestre {
+  background-color: #cfe2ff;
+  border-radius: 10px;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 600px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+
+.semestre:hover {
+  background-color: #a9c9ff;
+}
+
+.materias {
+  list-style-type: disc;
+  margin-top: 0.5rem;
+  padding-left: 2rem;
+}
+
+.oculto {
+  display: none;
+}
